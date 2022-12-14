@@ -35,6 +35,7 @@ export default function App() {
 
   // utilizando spread operator (...) 
   // para desestruturar o objeto e passar as chaves da desestruturação como se fossem parâmetros da cesta (topo e detalhes).
+  // remove a camada externna do objeto
   return (
     <SafeAreaView onLayout={onLayoutRootView}>
       <StatusBar />
