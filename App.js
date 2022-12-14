@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { 
+  StatusBar, 
+  SafeAreaView // Assegura para o IOS uma formatação que não quebra a barra de status  superior e inferior
+} from 'react-native';
+import Cesta from './src/telas/Cesta';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Alura</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+      <StatusBar />
+      <Cesta />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
