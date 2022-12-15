@@ -9,7 +9,10 @@ import Topo from './components/Topo'
 
 export default function Cesta({ topo, detalhes, itens }) {
 
-  // FlatList já é  uma scrolll view, e não pode estar dentro de outra scroll view
+  /* 
+    FlatList já é uma scrolll view, e não pode estar dentro de outra scroll view
+    com a view pai sendo flex: 1, ela renderizará apenas os itens que estão na tela de rolagem.
+  */
   return (
     <>
       <FlatList
