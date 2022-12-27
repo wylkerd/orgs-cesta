@@ -8,7 +8,7 @@ import {
 } from '../constants/images';
 
 export interface ILang {
-  ptBr: ICestaTextos,
+  pt: ICestaTextos,
   en: ICestaTextos,
 }
 
@@ -42,7 +42,7 @@ export interface IItem {
 }
 
 const cesta: ILang = {
-  ptBr: {
+  pt: {
     topo: {
       titulo: "Detalhe da cesta",
     },
@@ -82,37 +82,37 @@ const cesta: ILang = {
   },
   en: {
     topo: {
-      titulo: "Detalhe da cesta",
+      titulo: "Basket detail",
     },
     detalhes: {
-      nome: "Cesta de Verduras",
+      nome: "Basket of Vegetables",
       logoFazenda: logo,
       nomeFazenda: "Jenny Jack Farm",
-      descricao: "Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha",
+      descricao: "A basket with carefully selected products from the farm straight to your kitchen",
       preco: "R$ 40,00",
-      botao: "Comprar",
+      botao: "Buy",
     },
     itens: {
-      titulo: "Itens da cesta",
+      titulo: "Basket items",
       lista: [
         {
-          nome: "Tomate",
+          nome: "Tomato",
           imagem: tomate,
         },
         {
-          nome: "Brócolis",
+          nome: "Broccoli",
           imagem: brocolis,
         },
         {
-          nome: "Batata",
+          nome: "Potato",
           imagem: batata,
         },
         {
-          nome: "Pepino",
+          nome: "Cucumber",
           imagem: pepino,
         },
         {
-          nome: "Abóbora",
+          nome: "Pumpkin",
           imagem: abobora,
         }
       ]
