@@ -4,7 +4,7 @@ import { Image, StyleSheet, View } from 'react-native';
 import Texto from '../../../components/Texto';
 
 // Item padrão, já sendo desestruturado a captura (nome e imagem)
-export default function Item({ item: { nome, imagem }}) {
+export default function Item({ item: { nome, imagem }}: any) {
 
   return (
     <View style={estilos.item}>

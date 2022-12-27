@@ -1,7 +1,7 @@
 import { Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function Texto({ children, style }) { // React Native / React já disponibilizam a captura dos filhos na criação do componente
+export default function Texto({ children, style }: any) { // React Native / React já disponibilizam a captura dos filhos na criação do componente
   let estiloPadrao = estilos.texto;
 
   if (style?.fontWeight === 'bold') {

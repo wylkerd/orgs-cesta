@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
-import Texto from '../../../components/Texto';
 import Botao from '../../../components/Botao';
+import Texto from '../../../components/Texto';
 
-export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, preco, botao }) {
+export default function Detalhes({ nome, logoFazenda, nomeFazenda, descricao, preco, botao }: any) {
 
   return (
     <>

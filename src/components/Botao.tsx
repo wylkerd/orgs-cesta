@@ -3,7 +3,7 @@ import React from 'react'
 
 import Texto from './Texto'
 
-export default function Botao({ texto, onPress, style }) {
+export default function Botao({ texto, onPress, style }: any) {
   return (
     <TouchableOpacity style={[ estilos.botao, style ]} onPress={onPress}>
       <Texto style={ estilos.textoBotao }>{ texto }</Texto>

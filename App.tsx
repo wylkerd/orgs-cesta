@@ -8,7 +8,7 @@ import {
   Montserrat_400Regular, Montserrat_700Bold 
 } from '@expo-google-fonts/montserrat' // 'npx expo install expo-font @expo-google-fonts/nome_da_fonte', ou instale outra manualmente
 import Cesta from './src/telas/Cesta';
-import mock from './src/mocks/cesta'
+import { AppProvider } from './src/hooks';
 
 import * as SplashScreen from 'expo-splash-screen';
 
@@ -37,9 +37,11 @@ export default function App() {
 
   // style={{ flex: 1 }} indica que a safeAreaView mantem o tamanho que está aparente, carrega apenas o que está visivel nela
   return (
-    <SafeAreaView onLayout={onLayoutRootView} style={{ flex: 1 }}>
-      <StatusBar />
-      <Cesta {...mock} />
-    </SafeAreaView>
+    <AppProvider>
+      <SafeAreaView onLayout={onLayoutRootView} style={{ flex: 1 }}>
+        <StatusBar />
+        <Cesta />
+      </SafeAreaView>
+    </AppProvider>
   );
 }
